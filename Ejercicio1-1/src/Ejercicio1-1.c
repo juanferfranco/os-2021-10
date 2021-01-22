@@ -20,6 +20,10 @@ int main(void) {
 	// Punteros: variables donde se almancenan direcciones
 	int *pvariable = &variable;
 
+	*pvariable = 30;
+
+	printf("variable = %d\n", variable);
+
 
 	return EXIT_SUCCESS;
 }
