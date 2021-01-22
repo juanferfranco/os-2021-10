@@ -11,6 +11,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+// Prototipo la función.
+void functionPointer(int *, int);
+
 int main(void) {
 
 
@@ -24,6 +28,17 @@ int main(void) {
 
 	printf("variable = %d\n", variable);
 
+	functionPointer(pvariable, 50);
+
+	printf("variable = %d\n", variable);
 
 	return EXIT_SUCCESS;
+}
+
+
+void functionPointer(int * pvar,int value){
+	// *pvar es como tener el valor de la variable
+
+	*pvar =    (*pvar) + value;
+
 }
