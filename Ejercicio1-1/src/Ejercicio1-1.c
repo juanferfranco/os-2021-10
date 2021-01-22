@@ -12,6 +12,10 @@
 #include <stdlib.h>
 
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+
+
+	int variable = 20;
+	printf("variable = %d\n", variable);
+
 	return EXIT_SUCCESS;
 }
